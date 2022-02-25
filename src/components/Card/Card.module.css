@@ -13,7 +13,9 @@
   box-shadow: 0 2px 4px rgba(0 0 0 /8%), 0 4px 8px rgba(0 0 0 /16%);
 }
 
-.tagContainer {
-  display: flex;
-  justify-content: flex-end;
+.letterContainer {
+  text-align: center;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 4px;
+  padding: 6px 0;
 }

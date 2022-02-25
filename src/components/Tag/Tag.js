@@ -2,13 +2,13 @@
 import styles from "./Tag.module.css";
 
 // vars
-const { container, label, text } = styles;
+const { container, label } = styles;
 
-const Tag = ({ letter }) => {
+const Tag = ({ children }) => {
   return (
     <div className={container}>
       <p className={label}>
-        lettera<span className={text}>{letter}</span>
+        {children}
       </p>
     </div>
   );

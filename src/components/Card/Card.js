@@ -1,22 +1,23 @@
 // components
-import Tag from "../Tag/Tag";
 import Noun from "../Noun/Noun";
+import Verb from "../Verb/Verb";
 
 // styles
 import styles from "./Card.module.css";
 
 // vars
-const { container, tagContainer } = styles;
+const { container, letterContainer } = styles;
 
 const Card = ({ word }) => {
-  const { letter, noun, verb } = word;
+  const { letter } = word;
 
   return (
     <div className={container}>
-      <div className={tagContainer}>
-        <Tag letter={letter} />
-      </div>
+      <p className={letterContainer}>
+        lettera <span>{letter}</span>
+      </p>
       <Noun word={word} />
+      <Verb word={word} />
     </div>
   );
 };
