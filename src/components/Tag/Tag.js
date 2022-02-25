@@ -7,8 +7,9 @@ const { container, label, text } = styles;
 const Tag = ({ letter }) => {
   return (
     <div className={container}>
-      <p className={label}>lettera</p>
-      <p className={text}>{letter}</p>
+      <p className={label}>
+        lettera<span className={text}>{letter}</span>
+      </p>
     </div>
   );
 };

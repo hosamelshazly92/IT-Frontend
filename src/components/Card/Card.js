@@ -1,5 +1,6 @@
 // components
 import Tag from "../Tag/Tag";
+import Noun from "../Noun/Noun";
 
 // styles
 import styles from "./Card.module.css";
@@ -15,12 +16,7 @@ const Card = ({ word }) => {
       <div className={tagContainer}>
         <Tag letter={letter} />
       </div>
-      <p>
-        Noun: <span>{noun.word}</span>, Gender: <span>{noun.gender}</span>
-      </p>
-      <p>
-        Verb: <span>{verb}</span>
-      </p>
+      <Noun word={word} />
     </div>
   );
 };
