@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  padding: 8px;
+}
+
+.message {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  padding: 40px 0;
+}
