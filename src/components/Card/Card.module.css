@@ -1,5 +1,20 @@
 .container {
-  border: 1px solid #ccc;
-  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0 0 0 /8%), 0 4px 8px rgba(0 0 0 /8%);
+  padding: 16px;
+  margin-bottom: 8px;
+  transition: all 400ms ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.container:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0 0 0 /8%), 0 4px 8px rgba(0 0 0 /16%);
+}
+
+.tagContainer {
+  display: flex;
+  justify-content: flex-end;
   margin-bottom: 8px;
 }
